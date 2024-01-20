@@ -18,6 +18,7 @@ set(HEADER_FILES
 	platforms/teensy.h)
 
 add_definitions(-DARDUINO=146)
+add_definitions(-DTEENSYDUINO=167)
 add_library(teensy_x86_uClock_stubs SHARED STATIC ${HEADER_FILES} ${SOURCE_FILES})
 
 set_target_properties(teensy_x86_uClock_stubs PROPERTIES PUBLIC_HEADER "${HEADER_FILES}")
